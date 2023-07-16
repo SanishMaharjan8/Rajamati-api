@@ -53,11 +53,11 @@ const orderSchema = mongoose.Schema({
             }
         }
     ],
-    paymentInfo: {
-        id: {
+    paymentInfo: {       
+        status: {
             type: String
         },
-        status: {
+        type: {
             type: String
         }
     },

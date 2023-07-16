@@ -81,12 +81,7 @@ function App() {
           <ProtectedRoute path="/shipping" component={Shipping} />
           <ProtectedRoute path="/confirm" component={ConfirmOrder} exact />
           <ProtectedRoute path="/success" component={OrderSuccess} />
-          {stripeApiKey &&
-            <Elements stripe={loadStripe(stripeApiKey)}>
-              <ProtectedRoute path="/payment" component={Payment} />
-            </Elements>
-          }
-
+          <ProtectedRoute path="/payment" component={Payment} />          
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/password/forgot" component={ForgotPassword} exact />
@@ -109,7 +104,7 @@ function App() {
         <ProtectedRoute path="/admin/user/:id" isAdmin={true} component={UpdateUser} exact />
         <ProtectedRoute path="/admin/reviews" isAdmin={true} component={ProductReviews} exact />
 
-        {!loading && (!isAuthenticated || user.role !== 'admin') && (
+        {!loading && (
           <Footer />
         )}
       </div>

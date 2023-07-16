@@ -58,6 +58,10 @@ const OrdersList = ({ history }) => {
                     sort: 'asc'
                 },
                 {
+                    label: 'Payment Type',
+                    field: 'type'
+                },
+                {
                     label: 'Status',
                     field: 'status',
                     sort: 'asc'
@@ -75,6 +79,7 @@ const OrdersList = ({ history }) => {
                 id: order._id,
                 numofItems: order.orderItems.length,
                 amount: `$${order.totalPrice}`,
+                type: order.paymentInfo.type,
                 status: order.orderStatus && String(order.orderStatus).includes('Delivered')
                     ? <p style={{ color: 'green' }}>{order.orderStatus}</p>
                     : <p style={{ color: 'red' }}>{order.orderStatus}</p>,

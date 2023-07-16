@@ -614,3 +614,68 @@ ul.CTAs a {
   font-size: 0.8rem;
   color: grey;
 }
+
+.main_footer {
+  background-color: #232f3e;
+  padding: 1rem 25rem;
+  margin-bottom: 5;
+}
+
+.header_link {
+  color: white
+}
+
+.block {
+  text-align: left;
+    line-height: 1.5;
+    border: 0;
+    margin-top: 0;
+    padding-top: 5%;
+    background-color: transparent;
+    float: none;
+    width: 5;
+}
+
+.block_title {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.block_content {
+  background-color: transparent;
+  padding: 2;
+  margin-left: 10;
+  color: white;
+}
+
+ul.links {
+  padding: 0;
+  margin-top: -5px;
+  list-style: none;
+  color: white;
+}
+
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li{
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom{
+  background-color: #111d2b;
+  padding: 1rem 1rem;
+  margin-bottom: 0;
+  color: white;
+}
+
+ul li{
+  padding: 0;
+  margin-top: -5px;
+  list-style: none;
+  color: white;
+}
